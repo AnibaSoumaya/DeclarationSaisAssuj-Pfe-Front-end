@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <style>
+    /* Style général de la page */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Style du container du profil */
+    .profile-container {
+      width: 70%;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+
+    /* Style de l'en-tête de la carte */
+    .profile-container h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    /* Style des champs */
+    .field {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+
+    .field > div {
+      flex: 1;
+    }
+
+    .field label {
+      font-weight: bold;
+      margin-bottom: 5px;
+      display: block;
+    }
+
+    .field input {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    /* Style du tableau */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    /* Style de la première ligne du tableau (th) */
+    th {
+      background-color: #ff9544; /* Orange du drapeau du Niger */
+      color: white;
+      padding: 20px; /* Augmenter la taille du padding pour le rendre plus grand */
+      text-align: left;
+      border-radius: 10px; /* Ajouter des bords arrondis */
+      font-size: 1.2em; /* Augmenter la taille de la police pour la rendre plus grande */
+    }
+
+    /* Style des cellules du tableau */
+    td {
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    /* Style des lignes du tableau */
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    tr:hover {
+      background-color: #f1f1f1;
+    }
+
+    /* Style des boutons */
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #ff9544; /* Même orange */
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 20px;
+      text-align: center;
+      transition: background-color 0.3s;
+    }
+
+    .button:hover {
+      background-color: #e68a3e;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="profile-container">
+    
+    <form>
+
+            <th>Vos informations</th>
+
+      <table>
+
+        <tr>
+          <td colspan="2">
+            <div class="field">
+              <div>
+                <label for="code">Code</label>
+                <input type="text" id="code" required readonly /> <!-- Rendre en lecture seule -->
+              </div>
+              <div>
+                <label for="nom">Nom</label>
+                <input type="text" id="nom" required readonly /> <!-- Rendre en lecture seule -->
+              </div>
+            </div>
+
+            <div class="field">
+              <div>
+                <label for="prenom">Prénom</label>
+                <input type="text" id="prenom" required readonly /> <!-- Rendre en lecture seule -->
+              </div>
+              <div>
+                <label for="numdec">Numéro déclaration</label>
+                <input type="text" id="numdec" required readonly /> <!-- Rendre en lecture seule -->
+              </div>
+            </div>
+
+            <div class="field">
+              <div>
+                <label for="matricule">Type de déclaration</label>
+                <input type="text" id="typedc" required readonly /> <!-- Rendre en lecture seule -->
+              </div>
+              <div>
+                <label for="datep">Date Prise de Service</label>
+                <input type="date" id="datep" required readonly /> <!-- Rendre en lecture seule -->
+              </div>
+
+            </div>
+
+          </td>
+        </tr>
+      </table>
+
+    </form>
+  </div>
+
+</body>
+</html>
