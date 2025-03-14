@@ -2,7 +2,7 @@ import { Declaration } from "./declaration";
 import { Vocabulaire } from "./vocabulaire";
 
 export class Revenu {
-    isSelected: boolean;
+
     id?: number;
     typeRevenu?: Vocabulaire;
     entite?:Vocabulaire;

@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { CommonModule, HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppLayoutModule } from './layout/app.layout.module';
@@ -19,6 +19,19 @@ import { InputTextareaModule } from 'primeng/inputtextarea';
 import { ToastModule } from 'primeng/toast';
 import { TableModule } from 'primeng/table';
 import { CardModule } from 'primeng/card';
+import { FormsModule } from '@angular/forms';
+import { PanelsDemoRoutingModule } from './demo/components/uikit/panels/panelsdemo-routing.module';
+import { ToolbarModule } from 'primeng/toolbar';
+import { RippleModule } from 'primeng/ripple';
+import { SplitButtonModule } from 'primeng/splitbutton';
+import { AccordionModule } from 'primeng/accordion';
+import { TabViewModule } from 'primeng/tabview';
+import { FieldsetModule } from 'primeng/fieldset';
+import { MenuModule } from 'primeng/menu';
+import { DividerModule } from 'primeng/divider';
+import { SplitterModule } from 'primeng/splitter';
+import { PanelModule } from 'primeng/panel';
+import { ScrollTopModule } from 'primeng/scrolltop';
 
 @NgModule({
     declarations: [
@@ -32,7 +45,21 @@ import { CardModule } from 'primeng/card';
         InputTextModule,
         InputTextareaModule,
         ToastModule,
-        TableModule 
+        TableModule,
+        CommonModule,
+        FormsModule,
+        PanelsDemoRoutingModule,
+        ToolbarModule,
+        RippleModule,
+        SplitButtonModule,
+        AccordionModule,
+        TabViewModule,
+        FieldsetModule,
+        MenuModule,
+        DividerModule,
+        SplitterModule,
+        PanelModule,
+        ScrollTopModule
     ],
     providers: [
         { provide: LocationStrategy, useClass: HashLocationStrategy },
